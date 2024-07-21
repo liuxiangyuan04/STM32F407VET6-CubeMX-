@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"basic_timer\startup_stm32f407xx.o"
+"basic_timer\main.o"
+"basic_timer\gpio.o"
+"basic_timer\tim.o"
+"basic_timer\stm32f4xx_it.o"
+"basic_timer\stm32f4xx_hal_msp.o"
+"basic_timer\stm32f4xx_hal_tim.o"
+"basic_timer\stm32f4xx_hal_tim_ex.o"
+"basic_timer\stm32f4xx_hal_rcc.o"
+"basic_timer\stm32f4xx_hal_rcc_ex.o"
+"basic_timer\stm32f4xx_hal_flash.o"
+"basic_timer\stm32f4xx_hal_flash_ex.o"
+"basic_timer\stm32f4xx_hal_flash_ramfunc.o"
+"basic_timer\stm32f4xx_hal_gpio.o"
+"basic_timer\stm32f4xx_hal_dma_ex.o"
+"basic_timer\stm32f4xx_hal_dma.o"
+"basic_timer\stm32f4xx_hal_pwr.o"
+"basic_timer\stm32f4xx_hal_pwr_ex.o"
+"basic_timer\stm32f4xx_hal_cortex.o"
+"basic_timer\stm32f4xx_hal.o"
+"basic_timer\stm32f4xx_hal_exti.o"
+"basic_timer\system_stm32f4xx.o"
+--strict --scatter "basic_timer\basic_timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "basic_timer.map" -o basic_timer\basic_timer.axf
