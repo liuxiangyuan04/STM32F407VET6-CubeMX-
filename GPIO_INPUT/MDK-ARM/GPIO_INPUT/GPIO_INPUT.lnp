@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"gpio_input\startup_stm32f407xx.o"
+"gpio_input\main.o"
+"gpio_input\gpio.o"
+"gpio_input\stm32f4xx_it.o"
+"gpio_input\stm32f4xx_hal_msp.o"
+"gpio_input\stm32f4xx_hal_tim.o"
+"gpio_input\stm32f4xx_hal_tim_ex.o"
+"gpio_input\stm32f4xx_hal_rcc.o"
+"gpio_input\stm32f4xx_hal_rcc_ex.o"
+"gpio_input\stm32f4xx_hal_flash.o"
+"gpio_input\stm32f4xx_hal_flash_ex.o"
+"gpio_input\stm32f4xx_hal_flash_ramfunc.o"
+"gpio_input\stm32f4xx_hal_gpio.o"
+"gpio_input\stm32f4xx_hal_dma_ex.o"
+"gpio_input\stm32f4xx_hal_dma.o"
+"gpio_input\stm32f4xx_hal_pwr.o"
+"gpio_input\stm32f4xx_hal_pwr_ex.o"
+"gpio_input\stm32f4xx_hal_cortex.o"
+"gpio_input\stm32f4xx_hal.o"
+"gpio_input\stm32f4xx_hal_exti.o"
+"gpio_input\system_stm32f4xx.o"
+--strict --scatter "GPIO_INPUT\GPIO_INPUT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPIO_INPUT.map" -o GPIO_INPUT\GPIO_INPUT.axf
