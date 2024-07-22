@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"universal_timer11_pwm\startup_stm32f407xx.o"
+"universal_timer11_pwm\main.o"
+"universal_timer11_pwm\gpio.o"
+"universal_timer11_pwm\tim.o"
+"universal_timer11_pwm\stm32f4xx_it.o"
+"universal_timer11_pwm\stm32f4xx_hal_msp.o"
+"universal_timer11_pwm\stm32f4xx_hal_tim.o"
+"universal_timer11_pwm\stm32f4xx_hal_tim_ex.o"
+"universal_timer11_pwm\stm32f4xx_hal_rcc.o"
+"universal_timer11_pwm\stm32f4xx_hal_rcc_ex.o"
+"universal_timer11_pwm\stm32f4xx_hal_flash.o"
+"universal_timer11_pwm\stm32f4xx_hal_flash_ex.o"
+"universal_timer11_pwm\stm32f4xx_hal_flash_ramfunc.o"
+"universal_timer11_pwm\stm32f4xx_hal_gpio.o"
+"universal_timer11_pwm\stm32f4xx_hal_dma_ex.o"
+"universal_timer11_pwm\stm32f4xx_hal_dma.o"
+"universal_timer11_pwm\stm32f4xx_hal_pwr.o"
+"universal_timer11_pwm\stm32f4xx_hal_pwr_ex.o"
+"universal_timer11_pwm\stm32f4xx_hal_cortex.o"
+"universal_timer11_pwm\stm32f4xx_hal.o"
+"universal_timer11_pwm\stm32f4xx_hal_exti.o"
+"universal_timer11_pwm\system_stm32f4xx.o"
+--strict --scatter "Universal_Timer11_PWM\Universal_Timer11_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Universal_Timer11_PWM.map" -o Universal_Timer11_PWM\Universal_Timer11_PWM.axf
